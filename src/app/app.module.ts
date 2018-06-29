@@ -20,7 +20,10 @@ import { AboutComponent } from './about/about.component'
   imports: [
     BrowserModule,
     HttpModule,
-    RouterModule
+    RouterModule.forRoot([
+      {path: '', component: HomeComponent},
+      {path: 'about', component: AboutComponent}
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]
